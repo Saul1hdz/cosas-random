@@ -27,15 +27,16 @@ h5,
 h6{
 font-family: Arial, Helvetica, sans-serif;
 font-weight: normal;
-font-style: normal;
+font-style: italic;
 }
 h1{
     font-size: 40px;
  line-height: 1.5em;
  color: white;
- margin: 100px 150px 70px 30px;
- /* letter-spacing: -.2px;
- text-decoration: underline; */
+ /* margin: 100px 150px 70px 30px; */
+ letter-spacing: -.2px;
+ margin: 0;
+ /* text-decoration: underline; */ 
 }
 
 h1 strong{
@@ -49,6 +50,8 @@ h1 strong{
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
 }
 
 .project{
@@ -71,11 +74,56 @@ h1 strong{
     width: 500px;
 }
 
+.menu{
+    height: inherit;
+}
+
 .header {
     background-color: #1b2127;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
 }
 .header a{
     color: white;
     text-decoration: none;
+}
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+figure{
+    margin: 0;
+}
+.header ol{
+    display: flex;
+    height: inherit;
+}
+.header ol li{
+    height: inherit;
+}
+.header a{
+    color: white;
+    text-decoration: none ;
+    height: inherit;
+    display: flex;
+    align-items: center ;
+    padding:0 10px;
+}
+.footer{
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img{
+    vertical-align: middle;
+}
+.footer a{
+    color: white;
 }
