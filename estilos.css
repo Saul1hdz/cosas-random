@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6{
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-weight: normal;
 font-style: italic;
 }
@@ -42,6 +42,15 @@ h1{
 h1 strong{
     color: #026fff;
 }
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
 
 .hero{
     height: 300px;
@@ -62,10 +71,29 @@ h1 strong{
     /* border-color: blue;
     border-width: 15px;
     border-style: solid; */
-    border: 5px solid gray;
+    border: 1px solid gray;
     border-radius: 10px;
     margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.project-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.project-course,
+.project-date,
+.project-ulr{
+    margin: 10px 0;
+}
+.project-description{
+    font-size: 20px;
+}
+
 
 .project-details{
     width: 500px;
@@ -126,4 +154,8 @@ figure{
 }
 .footer a{
     color: white;
+}
+.portfolio{
+    background: #fafafa;
+    padding: 20px;
 }
