@@ -54,13 +54,17 @@ h2 {
 
 .hero{
     height: 300px;
-    background-image: url(5.png);
+    /* background-image: url(5.png); */
     background-color: #1b2127;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    /* background-size: 500px 300px;
+    background-repeat: no-repeat; */
+    /* background-position-x: right; */
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.hero-image{
+object-fit: cover;
 }
 
 .project{
@@ -161,7 +165,7 @@ figure{
 }
 .Random{
     border: 1px solid red;
-    margin: 10px;
+    /* margin: 10px; */
     width: 480px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -171,6 +175,7 @@ figure{
 }
 .Random-list{
     display: flex;
+    flex-wrap: wrap;
 }
 .Random img{
     width: 480px;
@@ -205,15 +210,6 @@ figure{
     display: flex;
     align-items: center;
 }
-.social{
-    border: 1px solid red;
-}
-.social-link{
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid white;
-}
 .form-email input{
 border-color: gray ;
 border-style: solid;
@@ -224,12 +220,22 @@ background-size: 20px 20px;
     display: block;
     background: transparent ;
     color: white;
-    padding: 10px 0;
+    padding: 5px ;
     border-radius: 5px;
     width: 100px;
-    margin-top: 10px;
+    margin-top: 0px;
     /* margin: 10px auto 0; */
 }
 .form-email h3{
 font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }
